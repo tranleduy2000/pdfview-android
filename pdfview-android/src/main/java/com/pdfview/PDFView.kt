@@ -44,6 +44,7 @@ class PDFView @JvmOverloads constructor(context: Context, attrs: AttributeSet? =
         return this
     }
 
+    @Throws(Exception::class)
     fun fromUri(uri: Uri): PDFView {
         pdfFile = FileUtils.fileFromUri(context, uri)
         return this
